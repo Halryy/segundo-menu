@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fundodalista {
+            background-color: black;
+            border-bottom: 5px solid rgb(67, 102, 255);
+            border-radius: 5px;
+            height: 100px;
+            width: 600px;
+        }
+
+        .lista {
+            display: flex;
+            list-style: none;
+            padding: 0px;
+        }
+
+        ul li {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 15px;
+            font-size: 25px;
+            margin-top: 15px;
+        }
+
+        * {
+            outline: none;
+        }
+
+        #produtos:target, #home:target, #compania:target, #contato:target {
+            background-color: rgb(67, 102, 255);
+            transition: all 0.2s;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fundodalista">
+        <nav>
+            <ul class="lista">
+                <li><a id="home" href="#home">Home</a></li>
+                <li><a id="produtos" href="#produtos">Produtos</a></li>
+                <li><a id="compania" href="#compania">Compania</a></li>
+                <li><a id="contato" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
